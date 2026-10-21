@@ -1,0 +1,148 @@
+{
+  "standards": [
+    {
+      "code": "ISO 14855-1:2012 / ISO 14855-2:2018",
+      "title": "Determination of the ultimate aerobic biodegradability of plastic materials under controlled composting conditions",
+      "scope": "Industrial composting",
+      "environment": "industrial_compost",
+      "temperature_celsius": "58 ± 2 °C",
+      "typical_duration_days": 180,
+      "criterion": "≥ 90% carbon conversion to CO2 relative to reference material (cellulose) within 180 days",
+      "notes": "Specifies respirometric test method only. It is a test standard, not product certification."
+    },
+    {
+      "code": "EN 13432:2000",
+      "title": "Packaging - Requirements for packaging recoverable through composting and biodegradation",
+      "scope": "Industrial composting of packaging",
+      "environment": "industrial_compost",
+      "temperature_celsius": "58 °C",
+      "typical_duration_days": 180,
+      "criterion": "≥ 90% biodegradation within 6 months, physical disintegration (<10% >2mm sieve residue) within 12 weeks, chemical analysis (heavy metals within thresholds), and ecotoxicity test (plant germination >90%).",
+      "notes": "European harmonised standard for industrial compostability. Requires all 4 tiers: characterization, biodegradation, disintegration, ecotoxicity."
+    },
+    {
+      "code": "ASTM D6400-23",
+      "title": "Standard Specification for Labeling of Plastics Designed to be Aerobically Composted in Municipal or Industrial Facilities",
+      "scope": "Industrial composting",
+      "environment": "industrial_compost",
+      "temperature_celsius": "58 ± 2 °C",
+      "typical_duration_days": 180,
+      "criterion": "≥ 90% carbon conversion within 180 days, satisfactory disintegration in 84 days, heavy metal limits compliant.",
+      "notes": "US specification standard. Explicitly limited to municipal and industrial facilities; does not imply home compostability or soil degradation."
+    },
+    {
+      "code": "NF T51-800:2015 / AS 5810:2010",
+      "title": "Plastics - Specifications for plastics suitable for home composting",
+      "scope": "Home composting",
+      "environment": "home_compost",
+      "temperature_celsius": "20 - 30 °C (ambient)",
+      "typical_duration_days": 365,
+      "criterion": "≥ 90% biodegradation within 12 months at ambient temperatures, disintegration in 6 months, ecotoxicity testing.",
+      "notes": "Home compost heaps run at much lower, variable temperatures than industrial facilities. Industrial compostable plastics (like neat PLA) fail this test."
+    },
+    {
+      "code": "ISO 17556:2019",
+      "title": "Plastics - Determination of the ultimate aerobic biodegradability of plastic materials in soil by measuring the oxygen demand or the amount of carbon dioxide evolved",
+      "scope": "Agricultural soil",
+      "environment": "soil",
+      "temperature_celsius": "20 - 28 °C",
+      "typical_duration_days": 730,
+      "criterion": "≥ 90% biodegradation within 2 years in natural soil.",
+      "notes": "Test method for soil biodegradation respirometry."
+    },
+    {
+      "code": "EN 17033:2018",
+      "title": "Plastics - Biodegradable mulch films for use in agriculture and horticulture - Requirements and test methods",
+      "scope": "Agricultural soil",
+      "environment": "soil",
+      "temperature_celsius": "20 - 25 °C",
+      "typical_duration_days": 730,
+      "criterion": "≥ 90% biodegradation in soil within 24 months, complete absence of heavy metals exceeding limits, and terrestrial ecotoxicity testing (plants, earthworms, soil nitrification).",
+      "notes": "Stringent standard for materials left in soil. Requires complete absence of persistent microplastic residue."
+    },
+    {
+      "code": "ISO 14851:2019 / ISO 14852:2021",
+      "title": "Determination of the ultimate aerobic biodegradability of plastic materials in an aqueous medium",
+      "scope": "Freshwater aquatic",
+      "environment": "freshwater",
+      "temperature_celsius": "20 - 25 °C",
+      "typical_duration_days": 56,
+      "criterion": "Respirometric measurement of BOD or CO2 in aquatic inoculum.",
+      "notes": "Aquatic test methods indicate potential for aqueous biodegradation, but freshwater bodies have highly variable nutrient and microbial concentrations."
+    },
+    {
+      "code": "ISO 22403:2020 / ASTM D6691-17",
+      "title": "Plastics - Assessment of the intrinsic biodegradability of materials exposed to marine inocula under laboratory conditions",
+      "scope": "Marine pelagic / sediment",
+      "environment": "marine",
+      "temperature_celsius": "15 - 25 °C",
+      "typical_duration_days": 180,
+      "criterion": "Respirometric assessment in marine water/sediment inoculum.",
+      "notes": "Marine environments are oligotrophic, cold (mean ocean temp <4°C), and low in specialized microbial biomass. Laboratory marine tests at 20-25°C cannot be directly extrapolated to cold oceanic waters."
+    },
+    {
+      "code": "ASTM D6866-24",
+      "title": "Standard Test Methods for Determining the Biobased Content of Solid, Liquid, and Gaseous Samples Using Radiocarbon Analysis",
+      "scope": "Origin / Feedstock quantification (C14 ratio)",
+      "environment": "feedstock_origin",
+      "temperature_celsius": "N/A",
+      "typical_duration_days": 0,
+      "criterion": "Percentage modern bio-based carbon relative to total organic carbon.",
+      "notes": "CRITICAL DISTINCTION: Bio-based content measures renewable origin, NOT end-of-life biodegradability. Bio-PE, Bio-PET, and Bio-PP are 100% biobased yet non-biodegradable."
+    }
+  ],
+  "certifications": [
+    {
+      "scheme": "TÜV AUSTRIA OK Compost INDUSTRIAL",
+      "scope": "Packaging and products compliant with EN 13432 / ASTM D6400 in industrial composting facilities (58°C).",
+      "limitations": "Does NOT mean the product will biodegrade in home compost, soil, or waterways."
+    },
+    {
+      "scheme": "TÜV AUSTRIA OK Compost HOME",
+      "scope": "Compliant with NF T51-800 / AS 5810 for ambient temperature home composting heaps.",
+      "limitations": "Composting conditions in home bins vary by climate, aeration, and moisture. Does not certify marine biodegradability."
+    },
+    {
+      "scheme": "TÜV AUSTRIA OK Biodegradable SOIL",
+      "scope": "Compliant with EN 17033 / ISO 17556 for agricultural soil assimilation without ecotoxicity.",
+      "limitations": "Valid primarily for thin applications like mulch film; thicker articles require extended time."
+    },
+    {
+      "scheme": "TÜV AUSTRIA OK Biodegradable MARINE",
+      "scope": "Laboratory marine biodegradation evidence.",
+      "limitations": "Extreme caution: Certification bodies and the EU recommend against marketing products as marine biodegradable to avoid encouraging littering."
+    },
+    {
+      "scheme": "BPI (Biodegradable Products Institute) Commercial Compostability",
+      "scope": "North American industrial compostability certification adhering to ASTM D6400 or ASTM D6868.",
+      "limitations": "Requires commercial composting facility infrastructure, which is not available in all municipalities."
+    },
+    {
+      "scheme": "USDA Certified Biobased Product",
+      "scope": "Feedstock verification verifying percentage biobased carbon via ASTM D6866.",
+      "limitations": "Biobased content certification does NOT certify compostability or biodegradability."
+    }
+  ],
+  "literature": [
+    {
+      "id": "narancic_2018",
+      "citation": "Narancic, T., et al. (2018). Biodegradable Plastic Blends in Real-World Environments: In Industrial, Home, and Aquatic Conditions. Environmental Science & Technology, 52(18), 10441-10452.",
+      "finding": "Comprehensive assessment showing neat PLA and PLA blends only degrade significantly under thermophilic industrial composting (>58°C). In soil and aquatic environments, PLA exhibited negligible degradation over 12 months. PHA and starch blends demonstrated broad biodegradability across environments."
+    },
+    {
+      "id": "haider_2019",
+      "citation": "Haider, T. P., et al. (2019). Plastics of the Future? The Impact of Biodegradable Polymers on the Environment and on Society. Angewandte Chemie International Edition, 58(1), 50-62.",
+      "finding": "Highlights difference between abiotic degradation (hydrolysis, photodegradation) and biotic mineralization. Emphasizes that polymer crystallinity, molecular weight, geometry, and additives heavily control biodegradation rates."
+    },
+    {
+      "id": "eu_sapea_2020",
+      "citation": "Group of Chief Scientific Advisors, European Commission (2020). Biodegradability of Plastics in the Open Environment. Scientific Opinion No. 10.",
+      "finding": "Recommends limiting the use of biodegradable plastics in the open environment to specific applications where reduction, reuse, or recycling is not feasible and where complete biodegradation is proven under real open-environment conditions."
+    },
+    {
+      "id": "unep_2015",
+      "citation": "UNEP (2015). Biodegradable Plastics and Marine Litter: Misconceptions, concerns and impacts on marine environments. United Nations Environment Programme, Nairobi.",
+      "finding": "Concluded that the adoption of biodegradable plastics will not significantly reduce either the amount of litter entering the marine environment or the risk of physical and chemical impacts on marine life."
+    }
+  ]
+}

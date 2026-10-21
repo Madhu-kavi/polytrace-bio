@@ -1,0 +1,1084 @@
+{
+  "materials": [
+    {
+      "id": "pla",
+      "name": "Polylactic Acid (PLA)",
+      "cas_number": "26100-51-6",
+      "category": "biodegradable_polyester",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polylactide", "PLA", "Poly(lactic acid)"],
+      "biobased_feedstock": "Typically fermented plant starch / sugars (corn, sugarcane, cassava)",
+      "general_characteristics": {
+        "density_g_cm3": "1.24 - 1.26",
+        "glass_transition_temp_c": "55 - 65",
+        "melting_temp_c": "150 - 180",
+        "typical_applications": "Rigid packaging, thermoformed cups, cold beverage cups, 3D printing filaments, agricultural films"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (temperature ≥ 58 °C, relative humidity > 60%, active microbial consortium)",
+          "summary": "Neat PLA undergoes abiotic hydrolytic chain cleavage above its glass transition temperature (~58 °C), reducing molecular weight until thermophilic microorganisms assimilate lactic acid monomers and oligomers.",
+          "standards": ["ISO 14855-1", "EN 13432", "ASTM D6400"],
+          "references": ["Narancic et al., Environ. Sci. Technol. 2018", "Haider et al., Angew. Chem. 2019"],
+          "limitations": "Requires thermophilic industrial facilities. Crystallinity and article wall thickness significantly slow degradation. Does not disintegrate in ambient home compost or open landfill."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Mesophilic composting (20 - 30 °C, variable moisture)",
+          "summary": "Temperatures in standard home compost bins remain well below PLA's glass transition temperature (~58 °C). Hydrolysis occurs at an extremely slow rate; macroscopic items persist with negligible mass loss over standard 12-month periods.",
+          "standards": ["NF T51-800", "AS 5810"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Only specialized chemically modified low-molecular-weight or heavily plasticized oligomeric formulations pass home composting standards; neat high-MW PLA does not."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Natural soil (ambient temperate climate 15 - 25 °C, natural pH 6-8)",
+          "summary": "Soil temperatures are insufficient to trigger thermal-hydrolytic scission. Multi-year burial studies document intact fragments with <5% degradation over 1-2 years.",
+          "standards": ["ISO 17556", "EN 17033"],
+          "references": ["Narancic et al., 2018", "EU SAPEA Scientific Opinion 10, 2020"],
+          "limitations": "Cannot be used as biodegradable mulch without blending with fast-degrading polyesters (PBAT, starch)."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient freshwater (15 - 22 °C, aerobic aqueous respirometry)",
+          "summary": "Aqueous hydrolysis at ambient temperature is negligible; absence of thermophilic microbial communities leads to prolonged aquatic persistence.",
+          "standards": ["ISO 14851", "ISO 14852"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Items will persist in rivers, lakes, and freshwater reservoirs."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine pelagic and benthic seawater (10 - 20 °C, high salinity, low nutrient levels)",
+          "summary": "Pelagic exposure tests demonstrate virtually zero mass loss (<1-2% after 1 year) due to low oceanic temperatures and lack of PLA-depolymerase enzymes in marine microbial consortia.",
+          "standards": ["ISO 22403", "ASTM D6691"],
+          "references": ["UNEP Marine Litter Report 2015", "Narancic et al., 2018"],
+          "limitations": "Presents persistent macro- and micro-plastic pollution risk in marine habitats identical to non-degradable polymers."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Physical fragmentation into particles <2mm (disintegration) must not be confused with enzymatic mineralization to CO2, H2O, and biomass. Unmineralized fragments persist as microplastics if ambient conditions prevent microbial uptake.",
+      "recyclability_notes": "Recyclable in dedicated PLA closed-loop mechanical systems, but contaminates conventional PET recycling streams (Code 1) at concentrations as low as 0.1% due to similar density and thermal degradation during PET remelting.",
+      "ecotoxicity_notes": "Pure PLA degrades to lactic acid, which enters the Krebs cycle. However, formulated PLA may contain catalyst residues (e.g., organotin like tin(II) octoate) and optical additives requiring chemical screening."
+    },
+    {
+      "id": "pha",
+      "name": "Polyhydroxyalkanoates (PHA: PHB / PHBV)",
+      "cas_number": "29434-03-5 / 80181-31-3",
+      "category": "biodegradable_polyester",
+      "entry_type": "polymer_family",
+      "synonyms": ["PHA", "PHB", "PHBV", "Poly(3-hydroxybutyrate-co-3-hydroxyvalerate)"],
+      "biobased_feedstock": "Intracellular microbial bacterial synthesis via bacterial fermentation of sugars, vegetable oils, or waste volatile fatty acids",
+      "general_characteristics": {
+        "density_g_cm3": "1.20 - 1.25",
+        "glass_transition_temp_c": "-5 to 5",
+        "melting_temp_c": "140 - 175",
+        "typical_applications": "Films, injection molded goods, single-use cutlery, marine gear, medical sutures"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C, high humidity)",
+          "summary": "Rapid microbial enzymatic depolymerization by extracellular PHA depolymerases; typically reaches >90% CO2 evolution well within the 180-day window.",
+          "standards": ["ISO 14855", "EN 13432", "ASTM D6400"],
+          "references": ["Narancic et al., 2018", "Haider et al., 2019"],
+          "limitations": "High crystallinity of homopolymer PHB may retard degradation if processing parameters result in large spherulites."
+        },
+        "home_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Mesophilic composting (20 - 30 °C, active organic compost)",
+          "summary": "Ubiquitous mesophilic bacteria and fungi express extracellular PHA depolymerases that hydrolyze PHA into water-soluble hydroxy acids, which are readily mineralized.",
+          "standards": ["NF T51-800", "AS 5810"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Wall thickness must be controlled; articles over 1-2 mm require extended disintegration time."
+        },
+        "soil": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Soil burial (20 - 25 °C, agricultural/forestry topsoils)",
+          "summary": "Soil microorganisms readily colonize PHA surfaces, achieving high levels of mineralization without synthetic chemical residues.",
+          "standards": ["ISO 17556", "EN 17033"],
+          "references": ["Narancic et al., 2018", "EU SAPEA 2020"],
+          "limitations": "Moisture, soil microbial biomass, and temperature influence rate; cold arctic or arid soils degrade significantly slower."
+        },
+        "freshwater": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Freshwater respirometry (20 - 25 °C)",
+          "summary": "Aquatic bacteria mineralize PHA films and particles, achieving respirometric criteria within standard testing timeframes.",
+          "standards": ["ISO 14851", "ISO 14852"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Rate depends on water eutrophication status and temperature."
+        },
+        "marine": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Seawater/sediment interface (15 - 25 °C)",
+          "summary": "PHA is one of the few polymer classes with verifiable enzymatic depolymerization by marine biofilm communities (e.g., Pseudoalteromonas and marine fungi).",
+          "standards": ["ISO 22403", "ASTM D6691"],
+          "references": ["Narancic et al., 2018", "UNEP 2015"],
+          "limitations": "Degradation in deep, near-freezing ocean waters (>1000m, ~2 °C) is significantly slower. Marine certification does not endorse open marine littering."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "PHA degrades via surface enzymatic erosion rather than bulk abiotic hydrolysis. Surface erosion leads directly to microbial assimilation without persistent intermediate fragments.",
+      "recyclability_notes": "Low thermal stability makes mechanical recycling via repeated re-extrusion challenging without significant chain scission and degradation.",
+      "ecotoxicity_notes": "Microbial metabolite 3-hydroxybutyrate is inherently biocompatible (found in human blood as a ketone body). Plant and aquatic ecotoxicity tests consistently show non-toxic behavior."
+    },
+    {
+      "id": "pbat",
+      "name": "Polybutylene Adipate Terephthalate (PBAT)",
+      "cas_number": "55231-08-8",
+      "category": "biodegradable_polyester",
+      "entry_type": "polymer_family",
+      "synonyms": ["PBAT", "Poly(butylene adipate-co-terephthalate)", "Ecoflex type copolymer"],
+      "biobased_feedstock": "Typically petrochemical fossil-derived (adipic acid, 1,4-butanediol, terephthalic acid), though bio-based BDO/adipic acid routes exist",
+      "general_characteristics": {
+        "density_g_cm3": "1.21 - 1.25",
+        "glass_transition_temp_c": "-30",
+        "melting_temp_c": "110 - 120",
+        "typical_applications": "Flexible film packaging, agricultural mulch film, compostable garbage bags (often blended with PLA or starch)"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Aliphatic-aromatic ester bonds are cleaved by microbial esterases and abiotic hydrolysis at elevated compost temperatures, achieving >90% conversion within 180 days.",
+          "standards": ["EN 13432", "ISO 14855", "ASTM D6400"],
+          "references": ["Haider et al., 2019", "Narancic et al., 2018"],
+          "limitations": "Compost facility residence times below 60 days may result in visible flexible film fragments."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient compost heaps (20 - 30 °C)",
+          "summary": "Thin PBAT films (<20-30 μm) can pass home composting disintegration and biodegradation standards, but thicker sections degrade sluggishly due to the aromatic terephthalate segments.",
+          "standards": ["NF T51-800", "AS 5810"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Strictly thickness-dependent; thick films or injection molded PBAT do not pass home composting criteria."
+        },
+        "soil": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Agricultural soil (20 - 25 °C, verified under EN 17033)",
+          "summary": "Qualified under EN 17033 for agricultural mulch films at prescribed gauges (typically ≤25 μm), mineralized by soil fungi and bacteria over 1-2 years.",
+          "standards": ["EN 17033", "ISO 17556"],
+          "references": ["Haider et al., 2019", "EU SAPEA 2020"],
+          "limitations": "Accumulation risk if applied annually in heavy clay or cold climates without proper soil turnover."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Aquatic respirometry (20 - 25 °C)",
+          "summary": "Shows moderate, slow biodegradation in freshwater; typically slower than aliphatic polyesters.",
+          "standards": ["ISO 14851"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Does not achieve rapid aquatic dissolution or mineralization."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment (15 - 20 °C)",
+          "summary": "PBAT shows very slow mass loss in open seawater. While higher than polyolefins, it does not fulfill marine biodegradability specifications within practical timeframes.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015", "Narancic et al., 2018"],
+          "limitations": "Persistent hazard if littered in marine waters."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "PBAT provides ductility to PLA/starch blends. If degradation conditions are incomplete, flexible micro-fragments containing aromatic terephthalate oligomers may linger.",
+      "recyclability_notes": "Incompatible with standard low-density polyethylene (LDPE) recycling streams; causes severe melt flow instability and black specks/smoke during polyolefin recycling.",
+      "ecotoxicity_notes": "Passing EN 17033 certification requires plant germination tests and soil earthworm ecotoxicity clearance."
+    },
+    {
+      "id": "pbs",
+      "name": "Polybutylene Succinate (PBS)",
+      "cas_number": "25777-14-4",
+      "category": "biodegradable_polyester",
+      "entry_type": "polymer_family",
+      "synonyms": ["PBS", "Poly(butylene succinate)", "Poly(tetramethylene succinate)"],
+      "biobased_feedstock": "Partially biobased (bio-succinic acid and/or bio-1,4-butanediol) or synthetic fossil-derived",
+      "general_characteristics": {
+        "density_g_cm3": "1.25 - 1.26",
+        "glass_transition_temp_c": "-32",
+        "melting_temp_c": "114 - 118",
+        "typical_applications": "Thermoformed packaging, agricultural mulch, coffee capsules, film blowing"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Linear aliphatic polyester chain structure is susceptible to enzymatic esterase attack; achieves >90% biodegradation within 180 days under ISO 14855.",
+          "standards": ["ISO 14855", "EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Higher crystallinity than PBAT results in slightly slower initial disintegration kinetics."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient composting (20 - 30 °C)",
+          "summary": "PBS homopolymer exhibits slow degradation in home compost. Copolymers like PBSA (Polybutylene succinate-co-adipate) degrade significantly faster at ambient temperatures.",
+          "standards": ["NF T51-800"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Neat high-crystallinity PBS items often exceed home composting time thresholds unless formulated as copolymers."
+        },
+        "soil": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Soil burial (20 - 25 °C)",
+          "summary": "Biodegrades over 12-24 months in soil depending heavily on film thickness, microbial activity, and copolymer ratio.",
+          "standards": ["ISO 17556"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Standard PBS thicker than 50 μm requires several seasons to achieve high mineralization."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Aqueous medium (20 - 25 °C)",
+          "summary": "Slow aquatic biodegradation observed; relies on specific esterase-producing aquatic bacteria.",
+          "standards": ["ISO 14851"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Prolonged residence time in oligotrophic water bodies."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine seawater (15 - 20 °C)",
+          "summary": "In seawater without benthic anaerobic sediment, PBS exhibits very low degradation rates (<5-10% in 180 days).",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Cannot be considered marine biodegradable under open ocean conditions."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Spherulite crystallization can yield brittle macroscopic fragments before enzymatic cleavage is completed.",
+      "recyclability_notes": "Can be chemically or mechanically reprocessed in isolated streams; incompatible with polyolefin or PET recycling streams.",
+      "ecotoxicity_notes": "Succinic acid and 1,4-butanediol metabolites are readily metabolized with low demonstrated toxicity in standard plant assays."
+    },
+    {
+      "id": "tps",
+      "name": "Thermoplastic Starch (TPS)",
+      "cas_number": "9005-25-8 (modified)",
+      "category": "natural_polymer",
+      "entry_type": "specific_polymer",
+      "synonyms": ["TPS", "Plasticized starch", "Destructured starch"],
+      "biobased_feedstock": "Corn, potato, cassava, or wheat starch plasticized with polyols (glycerol, sorbitol, water)",
+      "general_characteristics": {
+        "density_g_cm3": "1.3 - 1.4",
+        "glass_transition_temp_c": "-20 to 40 (plasticizer dependent)",
+        "melting_temp_c": "N/A (decomposes above 200 °C)",
+        "typical_applications": "Carrier bags, packaging foams, loose-fill, blends with PBAT or PLA"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Readily depolymerized by amylase enzymes from diverse microbial populations; typically reaches >90% mineralization in under 4-8 weeks.",
+          "standards": ["ISO 14855", "EN 13432", "ASTM D6400"],
+          "references": ["Narancic et al., 2018", "Haider et al., 2019"],
+          "limitations": "Hydrophilic nature requires blending or protective barrier coatings for functional packaging."
+        },
+        "home_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "Microbial amylolytic activity in ambient compost rapidly converts amylose and amylopectin into glucose and biomass within weeks to months.",
+          "standards": ["NF T51-800", "AS 5810"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Co-formulated synthetic resins in commercial starch blends dictate the final home compostability."
+        },
+        "soil": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Natural soil (20 - 25 °C)",
+          "summary": "Native soil fungi and bacteria rapidly metabolize starch; high mineralization rates confirmed in soil respirometry.",
+          "standards": ["ISO 17556", "EN 17033"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "None for pure starch, but commercial TPS is almost always blended with polyesters (PBAT) which determine the overall degradation timescale."
+        },
+        "freshwater": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Aquatic respirometry (20 - 25 °C)",
+          "summary": "Water solubility and high bioavailability lead to rapid aerobic aqueous biodegradation.",
+          "standards": ["ISO 14851", "ISO 14852"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "High biological oxygen demand (BOD) if discharged in large bulk quantities into stagnant waterways."
+        },
+        "marine": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Marine environment (15 - 25 °C)",
+          "summary": "Marine microorganisms rapidly consume starch polysaccharides, leaving no persistent residue.",
+          "standards": ["ISO 22403"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "TPS alone lacks water resistance; commercial blends with PBAT/PLA will retain the marine persistence profile of those hydrophobic components."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Starch dissolves/disperses rapidly in water, which must not be conflated with total mineralization, although microbial respiration follows rapidly.",
+      "recyclability_notes": "Severe contaminant in conventional polyolefin and PET mechanical recycling; causes foaming, charring, and caramelization at plastic extrusion temperatures.",
+      "ecotoxicity_notes": "Food-grade polysaccharide matrix with non-toxic glycerol plasticizers; passes all terrestrial and aquatic ecotoxicity benchmarks."
+    },
+    {
+      "id": "cellulose",
+      "name": "Regenerated Cellulose / Cellophane",
+      "cas_number": "9004-34-6",
+      "category": "natural_polymer",
+      "entry_type": "specific_polymer",
+      "synonyms": ["Cellophane", "Viscose film", "Regenerated cellulose film"],
+      "biobased_feedstock": "Wood pulp or cotton linters processed via viscose or lyocell / NMMO dissolution",
+      "general_characteristics": {
+        "density_g_cm3": "1.45 - 1.50",
+        "glass_transition_temp_c": "N/A",
+        "melting_temp_c": "Decomposes at 260 - 300 °C",
+        "typical_applications": "Clear film wraps, confectionery packaging, tape backing, breathable bags"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Serves as the international standard reference material (positive control) for ISO 14855 and ASTM D6400; reaches >90% CO2 conversion in under 45 days.",
+          "standards": ["ISO 14855", "EN 13432", "ASTM D6400"],
+          "references": ["ISO 14855-1 positive control specifications"],
+          "limitations": "Requires uncoated or biopolymer-coated film; traditional PVDC or nitrocellulose coatings prevent compostability."
+        },
+        "home_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Mesophilic composting (20 - 30 °C)",
+          "summary": "Cellulolytic enzymes produced by common composting fungi (Trichoderma, Aspergillus) hydrolyze beta-1,4-glucan bonds rapidly.",
+          "standards": ["NF T51-800", "AS 5810"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Synthetic barrier coatings (e.g. PVDC) will remain as micro-coatings if present."
+        },
+        "soil": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Soil burial (20 - 25 °C)",
+          "summary": "Rapidly mineralized by native soil cellulolytic bacteria and fungi within 6-12 weeks in humid soil.",
+          "standards": ["ISO 17556", "EN 17033"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "Dry arid soils slow microbial colonization."
+        },
+        "freshwater": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Aquatic environment (20 - 25 °C)",
+          "summary": "Degrades readily in natural freshwater environments containing active aquatic microflora.",
+          "standards": ["ISO 14851"],
+          "references": ["Narancic et al., 2018"],
+          "limitations": "Uncoated films hydrate and soften quickly."
+        },
+        "marine": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Marine environment (15 - 20 °C)",
+          "summary": "Substantial microbial mineralization documented in coastal and benthic marine environments, where cellulase-producing marine bacteria break down cellulose fibers.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015", "Narancic et al., 2018"],
+          "limitations": "Waterproof synthetic barrier coatings will persist."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Uncoated cellulose fibers biodegrade directly without intermediate persistent synthetic particles.",
+      "recyclability_notes": "Can be repulped in paper recycling streams if compatible with de-inking / pulping systems; not recyclable in plastic streams.",
+      "ecotoxicity_notes": "Completely benign natural polysaccharide matrix; chemical coatings (lacquers) require independent ecotoxicological testing."
+    },
+    {
+      "id": "ca",
+      "name": "Cellulose Acetate (CA)",
+      "cas_number": "9004-35-7",
+      "category": "natural_polymer",
+      "entry_type": "polymer_family",
+      "synonyms": ["Cellulose acetate", "CA", "Cellulose diacetate"],
+      "biobased_feedstock": "Acetylated cellulose from wood pulp or cotton",
+      "general_characteristics": {
+        "density_g_cm3": "1.28 - 1.32",
+        "glass_transition_temp_c": "180 - 200 (unplasticized)",
+        "melting_temp_c": "230 - 300",
+        "typical_applications": "Cigarette filter tows, eyewear frames, transparent films, textiles"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Biodegradation is strictly dependent on the Degree of Substitution (DS). Low DS (<2.1) shows moderate to good biodegradation under industrial composting, whereas higher DS (>2.5) exhibits high microbial resistance.",
+          "standards": ["ISO 14855", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Commercial cigarette filters and plastics typically have DS ~2.5 and contain plasticizers (triacetin), showing prolonged composting times."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "Ambient temperatures provide insufficient enzymatic deacetylation rates for standard commercial CA grades.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Neat commercial grades fail home compost standards."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Natural soil (20 - 25 °C)",
+          "summary": "Soil burial studies demonstrate that conventional cellulose acetate tows require 5 to 14 years to break down in open soil environments.",
+          "standards": ["ISO 17556"],
+          "references": ["UNEP 2015", "EU SAPEA 2020"],
+          "limitations": "Primary component of discarded cigarette butts, representing widespread global soil litter persistence."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Aquatic medium (20 - 25 °C)",
+          "summary": "Extremely slow deacetylation in natural water; persists for multiple years in freshwater habitats.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "High environmental persistence in rivers and lakes."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment (15 - 20 °C)",
+          "summary": "Exhibits long persistence in marine conditions; cigarette filters remain recognizable after years of marine immersion.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Leaches toxic accumulated nicotine and heavy metals when discarded as smoked filters."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Filters fibrillate mechanically into microfibers that persist for years due to the acetyl substituent groups blocking cellulase access.",
+      "recyclability_notes": "Specialty thermoplastic processing; cannot be mixed into municipal plastic recycling streams.",
+      "ecotoxicity_notes": "Unused pure polymer has low toxicity, but secondary plasticizers (phthalates or triacetin) and user-contaminants dictate real-world ecotoxicity."
+    },
+    {
+      "id": "pe",
+      "name": "Polyethylene (PE: LDPE / LLDPE / HDPE)",
+      "cas_number": "9002-88-4",
+      "category": "conventional_fossil",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polyethylene", "PE", "LDPE", "HDPE", "LLDPE", "Bio-PE (chemically identical)"],
+      "biobased_feedstock": "Typically petrochemical; bio-based ethylene produces chemically indistinguishable Bio-PE",
+      "general_characteristics": {
+        "density_g_cm3": "0.915 - 0.965",
+        "glass_transition_temp_c": "-120",
+        "melting_temp_c": "105 - 135",
+        "typical_applications": "Shopping bags, milk jugs, squeeze bottles, agricultural mulch, geomembranes"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Inert carbon-carbon single bond backbone with high molecular weight and hydrophobicity prevents microbial attack; zero measurable respirometric biodegradation.",
+          "standards": ["ISO 14855", "EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019", "Narancic et al., 2018"],
+          "limitations": "Severe contaminant in compost streams, leading to reject batches and microplastic contamination of agricultural compost."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "Zero biological breakdown; remains completely unaltered in home compost heaps.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Persists indefinitely."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Agricultural soil",
+          "summary": "Requires decades to centuries for UV-induced photo-oxidation followed by negligible microbial erosion; accumulates as persistent micro- and nano-plastics.",
+          "standards": ["ISO 17556", "EN 17033"],
+          "references": ["EU SAPEA 2020", "Haider et al., 2019"],
+          "limitations": "Major driver of microplastic buildup in agricultural soils from conventional mulch film fragments."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Aqueous environment",
+          "summary": "Hydrophobic non-polar surface resists bio-assimilation; persists and adsorbs organic contaminants.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "Physical hazard to freshwater organisms."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment",
+          "summary": "Buoyant (density < 1.0 g/cm3), floats on sea surface, fragments slowly via solar UV into secondary microplastics over decades to centuries without biological mineralization.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "One of the most ubiquitous ocean plastic pollutants worldwide."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Under UV and mechanical wave action, PE fragments into microplastics. This is abiotic physical fragmentation, NOT biodegradation or mineralization.",
+      "recyclability_notes": "Excellent mechanical recyclability with mature global infrastructure (Resin Identification Codes 2 and 4).",
+      "ecotoxicity_notes": "Virgin polymer is biologically inert; risk arises from plasticizer/additive migration and adsorption of persistent organic pollutants (POPs) on microplastic surfaces."
+    },
+    {
+      "id": "pp",
+      "name": "Polypropylene (PP)",
+      "cas_number": "9003-07-0",
+      "category": "conventional_fossil",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polypropylene", "PP", "Polypropene"],
+      "biobased_feedstock": "Petrochemical fossil feedstock; emerging bio-propylene routes yield identical polymer",
+      "general_characteristics": {
+        "density_g_cm3": "0.90 - 0.91",
+        "glass_transition_temp_c": "-10 to 0",
+        "melting_temp_c": "160 - 165",
+        "typical_applications": "Bottle caps, food containers, yogurt cups, automotive parts, woven bags"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Extremely resistant aliphatic C-C backbone; no enzymatic degradation observed under composting conditions.",
+          "standards": ["EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Severe contaminant in compost facilities."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "Complete persistence; no biological degradation occurs.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Will remain intact for decades."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Natural soil",
+          "summary": "No verified biodegradation by soil microorganisms in the absence of severe thermal-photo-oxidative pre-treatment.",
+          "standards": ["ISO 17556"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "Persistent soil contaminant."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Freshwater bodies",
+          "summary": "Persistent in water bodies; undergoes mechanical fragmentation without microbial digestion.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "Persistent aquatic pollutant."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment",
+          "summary": "Floats on water; degrades abiotically via sunlight into microplastic fibers and beads without complete carbon mineralization.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Persistent threat to seabirds, marine turtles, and marine filter feeders."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Photo-oxidation creates tertiary carbon radicals that lead to embrittlement and disintegration into microplastics, not enzymatic mineralization.",
+      "recyclability_notes": "Widely mechanically recycled (Resin Identification Code 5). High demand for clean rPP streams.",
+      "ecotoxicity_notes": "Virgin polymer is food-contact safe, but thermal stabilizers and UV absorbers may have environmental toxicity profiles."
+    },
+    {
+      "id": "pet",
+      "name": "Polyethylene Terephthalate (PET)",
+      "cas_number": "25038-59-9",
+      "category": "conventional_fossil",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polyethylene terephthalate", "PET", "PETE", "Polyester"],
+      "biobased_feedstock": "Typically petrochemical; Bio-PET (e.g. 30% bio-based MEG) has identical chemical structure",
+      "general_characteristics": {
+        "density_g_cm3": "1.33 - 1.38",
+        "glass_transition_temp_c": "67 - 81",
+        "melting_temp_c": "250 - 260",
+        "typical_applications": "Beverage bottles, thermoformed clamshells, polyester fibers/textiles"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "High melting point, aromatic ring stability, and high crystallinity prevent significant enzymatic hydrolysis in composting facilities.",
+          "standards": ["EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Engineered bacterial PETases operate under laboratory bioreactor conditions, not commercial composting environments."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "No degradation observed; bottles and fibers remain unaltered.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Completely non-compostable."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Soil burial",
+          "summary": "Estimated degradation half-life exceeds centuries in soil environments.",
+          "standards": ["ISO 17556"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "Persistent pollutant."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Aquatic environment",
+          "summary": "Non-buoyant (sinks); accumulates in sediment beds with virtually zero microbial assimilation.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "Sinks and smothers benthic sediment ecosystems."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment",
+          "summary": "Sinks to sea bottom due to density (1.38 g/cm3); cold deep-sea benthic environments preserve PET bottles for decades without degradation.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Forms persistent deep-sea litter."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Textile PET sheds microfibers during laundering; these synthetic fibers do not biodegrade in municipal wastewater treatment plants or aquatic systems.",
+      "recyclability_notes": "Highest mechanical recycling volume globally (Resin Identification Code 1, rPET bottle-to-bottle). Contaminated by PLA or PVC.",
+      "ecotoxicity_notes": "Antimony trioxide catalyst residue is monitored for food-contact migration limits; overall polymer matrix is non-toxic."
+    },
+    {
+      "id": "ps",
+      "name": "Polystyrene (PS / EPS)",
+      "cas_number": "9003-53-6",
+      "category": "conventional_fossil",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polystyrene", "PS", "EPS", "Expanded polystyrene", "Styrofoam"],
+      "biobased_feedstock": "Fossil petrochemical derived",
+      "general_characteristics": {
+        "density_g_cm3": "1.04 - 1.06 (solid), 0.015 - 0.03 (expanded)",
+        "glass_transition_temp_c": "95 - 105",
+        "melting_temp_c": "Amorphous (softens ~100 °C)",
+        "typical_applications": "Protective packaging, foam food containers, disposable cutlery, petri dishes"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting (58 °C)",
+          "summary": "Aromatic pendant groups and durable C-C backbones prevent biological mineralization.",
+          "standards": ["EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Contaminant in municipal organic recycling."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost",
+          "summary": "Completely persistent in home compost bins.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Zero degradation."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Soil environment",
+          "summary": "While insect larvae (e.g. mealworms) can chew and pass EPS, carbon mineralization is minimal (<5-10%); the bulk passes as microplastic frass.",
+          "standards": ["ISO 17556"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "Forms persistent terrestrial microplastics."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Freshwater environment",
+          "summary": "Floats and persists in rivers and lakes.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "Easily ingested by aquatic wildlife."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment",
+          "summary": "EPS foams fragment under wave impact into millions of buoyant spherical beads (microplastics) that persist across ocean gyres.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Severe widespread ingestion hazard for marine organisms."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Mechanical fragmentation of EPS into beads gives an illusion of disappearance, but represents hazardous microplastic pollution.",
+      "recyclability_notes": "Very low economic recycling rates due to bulky transportation of expanded foam; poor circular infrastructure (Resin Identification Code 6).",
+      "ecotoxicity_notes": "Residual styrene monomer is classified as probably carcinogenic to humans (IARC Group 2A); flame retardants (e.g. HBCD) present persistent organic pollutant concerns in construction EPS."
+    },
+    {
+      "id": "pvc",
+      "name": "Polyvinyl Chloride (PVC)",
+      "cas_number": "9002-86-2",
+      "category": "conventional_fossil",
+      "entry_type": "polymer_family",
+      "synonyms": ["Polyvinyl chloride", "PVC", "Vinyl"],
+      "biobased_feedstock": "Petrochemical ethylene + chlorine from rock salt electrolysis",
+      "general_characteristics": {
+        "density_g_cm3": "1.30 - 1.45 (rigid), 1.15 - 1.35 (plasticized)",
+        "glass_transition_temp_c": "80 - 85",
+        "melting_temp_c": "Decomposes before melting (~140 - 200 °C)",
+        "typical_applications": "Pipes, medical tubing, cable insulation, blister packaging, faux leather"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Thermophilic composting",
+          "summary": "Chlorinated backbone prevents microbial colonization; emits toxic organochlorine compounds if incinerated.",
+          "standards": ["EN 13432", "ASTM D6400"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Disastrous contaminant in organic waste."
+        },
+        "home_compost": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Ambient compost",
+          "summary": "Completely non-biodegradable.",
+          "standards": ["NF T51-800"],
+          "references": ["Haider et al., 2019"],
+          "limitations": "Zero degradation."
+        },
+        "soil": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Soil burial",
+          "summary": "Persists for centuries in soil. Plasticizer additives (e.g. phthalates) leach into soil groundwater while polymer matrix remains.",
+          "standards": ["ISO 17556"],
+          "references": ["EU SAPEA 2020"],
+          "limitations": "Plasticizer leaching hazard."
+        },
+        "freshwater": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Freshwater environment",
+          "summary": "Non-biodegradable; persistent contaminant.",
+          "standards": ["ISO 14851"],
+          "references": ["UNEP 2015"],
+          "limitations": "Persistent aquatic hazard."
+        },
+        "marine": {
+          "label": "Evidence indicates low biodegradation under the specified conditions",
+          "conditions": "Marine environment",
+          "summary": "Sinks to ocean floor and persists for centuries without biological carbon mineralization.",
+          "standards": ["ISO 22403"],
+          "references": ["UNEP 2015"],
+          "limitations": "Benthic habitat contamination."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "PVC does not biodegrade. It undergoes dehydrochlorination under intense heat/UV, producing dark polyene sequences and toxic HCl.",
+      "recyclability_notes": "Major contaminant in PET and polyolefin recycling streams; 50 ppm PVC ruins PET recycling batches due to acid generation.",
+      "ecotoxicity_notes": "High ecotoxicity concern from ortho-phthalate plasticizers (endocrine disruptors) and heavy metal thermal stabilizers (organotin, lead, barium-zinc)."
+    },
+    {
+      "id": "caco3",
+      "name": "Calcium Carbonate (CaCO3 Filler)",
+      "cas_number": "471-34-1",
+      "category": "mineral_filler",
+      "entry_type": "mineral_filler",
+      "synonyms": ["Calcium carbonate", "Chalk", "Limestone powder", "CaCO3"],
+      "biobased_feedstock": "Mined natural mineral (calcite) or precipitated calcium carbonate",
+      "general_characteristics": {
+        "density_g_cm3": "2.71",
+        "glass_transition_temp_c": "N/A",
+        "melting_temp_c": "Decomposes >825 °C",
+        "typical_applications": "Inorganic mineral filler in bioplastic bags, thermoformed trays, injection molding to reduce cost and increase stiffness"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Composting medium (slightly acidic to neutral pH)",
+          "summary": "Inorganic mineral: cannot undergo organic biological mineralization (no organic carbon to evolve CO2). Under composting conditions, it acts as an inert neutralizer; standard compost specifications (EN 13432) cap total inorganic filler/ash content to ensure finished compost quality.",
+          "standards": ["EN 13432 volatile solids clause"],
+          "references": ["EN 13432:2000 Section 4.2"],
+          "limitations": "Does NOT biodegrade. High loadings (>10-20%) can breach compost volatile solids limits (>50% volatile solids required in finished packaging)."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient compost",
+          "summary": "Remains as mineral chalk/ash in the resulting compost. Harmless in modest amounts but does not bioconvert.",
+          "standards": ["NF T51-800"],
+          "references": ["AS 5810"],
+          "limitations": "Inert mineral residue; high concentrations leave chalky residues."
+        },
+        "soil": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Agricultural soil",
+          "summary": "Naturally occurring mineral in limestone soils; dissolves slowly according to soil acidity (CaCO3 + 2H+ -> Ca2+ + H2O + CO2). Beneficial for liming acidic soils, but does not represent bioplastic polymer assimilation.",
+          "standards": ["EN 17033"],
+          "references": ["EN 17033:2018"],
+          "limitations": "Alters local soil pH if added in heavy concentrations."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Freshwater environment",
+          "summary": "Inorganic mineral; contributes to water hardness and alkalinity. Does not biodegrade enzymatically.",
+          "standards": ["ISO 14851"],
+          "references": ["Limnology reference manuals"],
+          "limitations": "Inert mineral."
+        },
+        "marine": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Marine environment",
+          "summary": "Primary constituent of marine invertebrate shells and coral; dissolves below the carbonate compensation depth. Does not undergo organic biological decomposition.",
+          "standards": ["ISO 22403"],
+          "references": ["Oceanographic literature"],
+          "limitations": "Inert mineral."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Mineral particles release when the surrounding biopolymer matrix degrades, remaining as microscopic mineral particles. This is mineral dissolution/dispersion, not biodegradation.",
+      "recyclability_notes": "Increases density of recycled polyolefins (sinks in water separation tanks); acceptable in controlled filler masterbatches.",
+      "ecotoxicity_notes": "Benign mineral salt. Heavy metal contamination (lead, cadmium, arsenic) from unrefined quarry sources must be independently tested against standard thresholds."
+    },
+    {
+      "id": "talc",
+      "name": "Talc Mineral Filler",
+      "cas_number": "14807-96-6",
+      "category": "mineral_filler",
+      "entry_type": "mineral_filler",
+      "synonyms": ["Hydrated magnesium silicate", "Talcum powder"],
+      "biobased_feedstock": "Mined natural phyllosilicate mineral",
+      "general_characteristics": {
+        "density_g_cm3": "2.7 - 2.8",
+        "glass_transition_temp_c": "N/A",
+        "melting_temp_c": "Decomposes >900 °C",
+        "typical_applications": "Nucleating agent and stiffness enhancer in PLA thermoformed cutlery and packaging"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Composting medium",
+          "summary": "Inorganic silicate mineral that does not biodegrade. Remains as inert mineral ash in finished compost. Must comply with EN 13432 ash content thresholds.",
+          "standards": ["EN 13432"],
+          "references": ["EN 13432"],
+          "limitations": "Inorganic residue; excessive loading reduces volatile organic fraction required by composting specifications."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient compost",
+          "summary": "Inert mineral; does not decompose.",
+          "standards": ["NF T51-800"],
+          "references": ["AS 5810"],
+          "limitations": "Persists as mineral ash."
+        },
+        "soil": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Soil environment",
+          "summary": "Insoluble phyllosilicate mineral; persists in soil as clay-like particulate without biological degradation.",
+          "standards": ["EN 17033"],
+          "references": ["EN 17033"],
+          "limitations": "Inert mineral residue."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Aquatic environment",
+          "summary": "Insoluble mineral particulate; settles into aquatic sediments.",
+          "standards": ["ISO 14851"],
+          "references": ["Geological literature"],
+          "limitations": "Inert."
+        },
+        "marine": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Marine environment",
+          "summary": "Insoluble silicate mineral; deposits in sediment.",
+          "standards": ["ISO 22403"],
+          "references": ["Oceanographic literature"],
+          "limitations": "Inert."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Inorganic minerals do not possess carbon-carbon bonds and cannot undergo microbial mineralization to carbon dioxide.",
+      "recyclability_notes": "Alters melt rheology and raises density in mechanical recycling.",
+      "ecotoxicity_notes": "Must be certified asbestos-free. Non-toxic silicate when free from respirable fibers and heavy metals."
+    },
+    {
+      "id": "atbc",
+      "name": "Acetyl Tributyl Citrate (ATBC Plasticizer)",
+      "cas_number": "77-90-7",
+      "category": "organic_additive",
+      "entry_type": "functional_additive",
+      "synonyms": ["ATBC", "Citroflex A-4", "Tributyl O-acetylcitrate"],
+      "biobased_feedstock": "Synthesized from naturally derived citric acid and butanol",
+      "general_characteristics": {
+        "density_g_cm3": "1.05",
+        "glass_transition_temp_c": "N/A (liquid at room temp)",
+        "melting_temp_c": "-80 °C (freezing point)",
+        "typical_applications": "Non-toxic biodegradable plasticizer for PLA, PHB, and cellulose plastics"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Industrial composting (58 °C)",
+          "summary": "Readily accessible organic ester bonds are hydrolyzed and metabolized by composting microorganisms within 28-60 days.",
+          "standards": ["ISO 14855", "OECD 301B"],
+          "references": ["ECHA Registration Dossier CAS 77-90-7"],
+          "limitations": "Plasticizer migration into packaged goods if improperly compounded."
+        },
+        "home_compost": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Ambient compost (20 - 30 °C)",
+          "summary": "Classified as inherently and readily biodegradable in mesophilic aerobic testing; degrades in ambient compost.",
+          "standards": ["NF T51-800", "OECD 301B"],
+          "references": ["OECD 301B screening assays"],
+          "limitations": "Depends on host matrix porosity."
+        },
+        "soil": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Agricultural soil",
+          "summary": "Soil bacteria metabolize citrate esters rapidly without accumulating toxic metabolites.",
+          "standards": ["ISO 17556"],
+          "references": ["ECHA Dossier CAS 77-90-7"],
+          "limitations": "None identified at standard formulation loadings (<10%)."
+        },
+        "freshwater": {
+          "label": "Evidence supports biodegradation under the specified conditions",
+          "conditions": "Aquatic respirometry",
+          "summary": "Meets OECD 301 ready biodegradability criteria (>60% degradation in 28 days in aqueous medium).",
+          "standards": ["OECD 301B", "ISO 14851"],
+          "references": ["ECHA Dossier CAS 77-90-7"],
+          "limitations": "Moderate aqueous solubility."
+        },
+        "marine": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Marine environment",
+          "summary": "Organic ester susceptible to marine esterases, but specific marine standard data are limited compared to freshwater tests.",
+          "standards": ["ISO 22403"],
+          "references": ["Literature on aliphatic esters in marine systems"],
+          "limitations": "Lack of standardized marine trial reports for neat additive."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Small organic molecule that dissolves and undergoes direct enzymatic beta-oxidation / Krebs cycle assimilation.",
+      "recyclability_notes": "Volatilizes or migrates during high-temperature recycling; lowers glass transition temperature of re-extruded blends.",
+      "ecotoxicity_notes": "Approved for food contact and pharmaceutical applications (FDA 21 CFR 175.105); negative for aquatic ecotoxicity in standard daphnia and fish assays."
+    },
+    {
+      "id": "tio2",
+      "name": "Titanium Dioxide (TiO2 White Pigment)",
+      "cas_number": "13463-67-7",
+      "category": "inorganic_pigment",
+      "entry_type": "functional_additive",
+      "synonyms": ["Titanium dioxide", "Titania", "Pigment White 6", "CI 77891"],
+      "biobased_feedstock": "Mined mineral ore (ilmenite or rutile)",
+      "general_characteristics": {
+        "density_g_cm3": "4.23",
+        "glass_transition_temp_c": "N/A",
+        "melting_temp_c": "1843 °C",
+        "typical_applications": "White opacifying pigment and UV blocker in bioplastic and conventional packaging"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Industrial composting",
+          "summary": "Inorganic pigment; cannot biodegrade. Remains as persistent mineral pigment in the compost. Concentration must be kept below certification thresholds (<1-2%).",
+          "standards": ["EN 13432 additive limits"],
+          "references": ["EN 13432:2000 Annex A"],
+          "limitations": "Non-biodegradable mineral. Must not exceed standard chemical restriction limits."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient compost",
+          "summary": "Completely inert pigment; does not degrade.",
+          "standards": ["NF T51-800"],
+          "references": ["NF T51-800"],
+          "limitations": "Remains in organic compost indefinitely."
+        },
+        "soil": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Agricultural soil",
+          "summary": "Insoluble mineral pigment. If used in nanoscale form, poses documented risks of bioaccumulation and ecotoxicity to soil bacteria and earthworms.",
+          "standards": ["EN 17033"],
+          "references": ["EFSA Opinion on E171, 2021", "EU SAPEA 2020"],
+          "limitations": "Nanoparticle variants raise significant terrestrial ecotoxicity concerns."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Freshwater bodies",
+          "summary": "Insoluble particles settle in sediment. Nanoscale TiO2 induces photocatalytic reactive oxygen species (ROS) that harm aquatic micro-invertebrates.",
+          "standards": ["ISO 14851"],
+          "references": ["Ecotoxicology literature"],
+          "limitations": "Ecotoxicity concerns for nanoparticles."
+        },
+        "marine": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Marine environment",
+          "summary": "Insoluble particulate; precipitates into marine sediments without organic degradation.",
+          "standards": ["ISO 22403"],
+          "references": ["Oceanographic toxicology"],
+          "limitations": "Persistent mineral particles."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Inorganic pigment that never undergoes carbon mineralization; persists as microscopic or nanoscale particles.",
+      "recyclability_notes": "Pigment causes discoloration in natural/transparent recycling streams, downgrading recyclate to dark or opaque fractions.",
+      "ecotoxicity_notes": "EU banned TiO2 as a food additive (E171) in 2022 due to genotoxicity concerns of the nanoparticle fraction. Compost certification restricts nanoscale pigment additions."
+    },
+    {
+      "id": "carbon_black",
+      "name": "Carbon Black (Black Pigment)",
+      "cas_number": "1333-86-4",
+      "category": "inorganic_pigment",
+      "entry_type": "functional_additive",
+      "synonyms": ["Carbon black", "Furnace black", "Pigment Black 7"],
+      "biobased_feedstock": "Incomplete combustion of heavy petroleum fractions or vegetable oils",
+      "general_characteristics": {
+        "density_g_cm3": "1.8 - 2.1",
+        "glass_transition_temp_c": "N/A",
+        "melting_temp_c": ">3500 °C",
+        "typical_applications": "Black masterbatch pigment in agricultural mulch films, trash bags, and electronic housings"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Industrial composting",
+          "summary": "Elemental carbon particles with turbostratic structure; virtually inert to microbial metabolism under composting durations. Allowed only under strict concentration caps (<1-2%) under EN 13432.",
+          "standards": ["EN 13432"],
+          "references": ["EN 13432 Annex A"],
+          "limitations": "Does not mineralize to CO2 within standard testing timeframes."
+        },
+        "home_compost": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Ambient compost",
+          "summary": "Inert elemental carbon; remains in the finished compost.",
+          "standards": ["NF T51-800"],
+          "references": ["NF T51-800"],
+          "limitations": "Zero biodegradation."
+        },
+        "soil": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Soil environment",
+          "summary": "Behaves like ancient elemental black carbon / charcoal; high environmental persistence (>decades to centuries).",
+          "standards": ["EN 17033"],
+          "references": ["Soil science literature"],
+          "limitations": "Non-biodegradable; may carry polycyclic aromatic hydrocarbon (PAH) residues if unrefined."
+        },
+        "freshwater": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Aquatic environment",
+          "summary": "Insoluble carbon particulate that settles in sediments.",
+          "standards": ["ISO 14851"],
+          "references": ["Environmental toxicology literature"],
+          "limitations": "Inert particulate."
+        },
+        "marine": {
+          "label": "Limited or condition-specific evidence",
+          "conditions": "Marine environment",
+          "summary": "Insoluble particle that deposits into marine sediments.",
+          "standards": ["ISO 22403"],
+          "references": ["Marine sediment studies"],
+          "limitations": "Inert."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Elemental carbon particles do not evolve biogenic CO2 during respirometric tests; they are chemically inert particles.",
+      "recyclability_notes": "Severe issue in automated near-infrared (NIR) sorting systems at recycling facilities; traditional carbon black absorbs NIR radiation, making the sorting machine blind to the host polymer.",
+      "ecotoxicity_notes": "Must be tested for Polycyclic Aromatic Hydrocarbons (PAHs) to avoid heavy contamination in organic agriculture."
+    },
+    {
+      "id": "unknown_additive",
+      "name": "Unknown Trade-Name Additive / Proprietary Masterbatch",
+      "cas_number": "Proprietary / Undisclosed",
+      "category": "unknown",
+      "entry_type": "unknown_component",
+      "synonyms": ["Trade secret additive", "Masterbatch agent", "Proprietary processing aid", "Compatibilizer X"],
+      "biobased_feedstock": "Undisclosed by supplier",
+      "general_characteristics": {
+        "density_g_cm3": "Unknown",
+        "glass_transition_temp_c": "Unknown",
+        "melting_temp_c": "Unknown",
+        "typical_applications": "Processing lubricants, slip agents, compatibilizers, fragrance, anti-blocking"
+      },
+      "environments": {
+        "industrial_compost": {
+          "label": "Insufficient evidence",
+          "conditions": "Unverified",
+          "summary": "Chemical composition, molecular weight, and biodegradation kinetics are undisclosed. Scientific screening cannot assume biodegradability or compostability without full CAS disclosure or third-party test reports.",
+          "standards": ["Undocumented"],
+          "references": ["Scientific screening protocol"],
+          "limitations": "Severe documentation gap. If additive exceeds 1% of formulation, EN 13432 / ASTM D6400 certification is invalid without individual testing."
+        },
+        "home_compost": {
+          "label": "Insufficient evidence",
+          "conditions": "Unverified",
+          "summary": "No verified test reports or chemical composition available.",
+          "standards": ["Undocumented"],
+          "references": ["Scientific screening protocol"],
+          "limitations": "Potential microplastic or toxic residue hazard."
+        },
+        "soil": {
+          "label": "Insufficient evidence",
+          "conditions": "Unverified",
+          "summary": "Unknown persistence, biodegradation pathway, and soil ecotoxicity.",
+          "standards": ["Undocumented"],
+          "references": ["Scientific screening protocol"],
+          "limitations": "High environmental contamination risk."
+        },
+        "freshwater": {
+          "label": "Insufficient evidence",
+          "conditions": "Unverified",
+          "summary": "Undocumented aquatic toxicity and biological oxygen demand.",
+          "standards": ["Undocumented"],
+          "references": ["Scientific screening protocol"],
+          "limitations": "Unknown aquatic persistence."
+        },
+        "marine": {
+          "label": "Insufficient evidence",
+          "conditions": "Unverified",
+          "summary": "Undocumented marine persistence and biofilm interaction.",
+          "standards": ["Undocumented"],
+          "references": ["Scientific screening protocol"],
+          "limitations": "High marine pollution risk."
+        }
+      },
+      "disintegration_vs_biodegradation_notes": "Undisclosed chemistry may contain non-biodegradable synthetic polymers (e.g. polyolefin waxes, fluorinated PFAS processing aids) that disintegrate into persistent micro-contaminants.",
+      "recyclability_notes": "Unknown compatibilizers can compromise both mechanical recycling and organic composting streams.",
+      "ecotoxicity_notes": "CRITICAL RISK: Without Safety Data Sheet (SDS) Section 3 disclosure and REACH / TSCA registration, ecotoxicity, plant inhibition, and PFAS content cannot be verified."
+    }
+  ]
+}
