@@ -127,22 +127,92 @@
     {
       "id": "narancic_2018",
       "citation": "Narancic, T., et al. (2018). Biodegradable Plastic Blends in Real-World Environments: In Industrial, Home, and Aquatic Conditions. Environmental Science & Technology, 52(18), 10441-10452.",
-      "finding": "Comprehensive assessment showing neat PLA and PLA blends only degrade significantly under thermophilic industrial composting (>58°C). In soil and aquatic environments, PLA exhibited negligible degradation over 12 months. PHA and starch blends demonstrated broad biodegradability across environments."
+      "finding": "Comprehensive assessment showing neat PLA and PLA blends only degrade significantly under thermophilic industrial composting (>58°C). In soil and aquatic environments, PLA exhibited negligible degradation over 12 months. PHA and starch blends demonstrated broad biodegradability across environments.",
+      "url": "https://doi.org/10.1021/acs.est.8b02963",
+      "type": "experimental",
+      "material_families": ["PLA", "PHA", "PBAT", "TPS", "blends"],
+      "environments_studied": ["industrial_compost", "home_compost", "soil", "freshwater", "marine"],
+      "limitations": "Tested neat polymers and select blends; does not cover all commercial formulations or additives."
     },
     {
       "id": "haider_2019",
       "citation": "Haider, T. P., et al. (2019). Plastics of the Future? The Impact of Biodegradable Polymers on the Environment and on Society. Angewandte Chemie International Edition, 58(1), 50-62.",
-      "finding": "Highlights difference between abiotic degradation (hydrolysis, photodegradation) and biotic mineralization. Emphasizes that polymer crystallinity, molecular weight, geometry, and additives heavily control biodegradation rates."
+      "finding": "Highlights difference between abiotic degradation (hydrolysis, photodegradation) and biotic mineralization. Emphasizes that polymer crystallinity, molecular weight, geometry, and additives heavily control biodegradation rates.",
+      "url": "https://doi.org/10.1002/anie.201805766",
+      "type": "review",
+      "material_families": ["PLA", "PHA", "PBAT", "PBS", "PE", "PET", "PS", "PVC", "cellulose_acetate"],
+      "environments_studied": ["industrial_compost", "home_compost", "soil", "freshwater", "marine"],
+      "limitations": "Review paper summarizing literature; does not provide new experimental data."
     },
     {
       "id": "eu_sapea_2020",
       "citation": "Group of Chief Scientific Advisors, European Commission (2020). Biodegradability of Plastics in the Open Environment. Scientific Opinion No. 10.",
-      "finding": "Recommends limiting the use of biodegradable plastics in the open environment to specific applications where reduction, reuse, or recycling is not feasible and where complete biodegradation is proven under real open-environment conditions."
+      "finding": "Recommends limiting the use of biodegradable plastics in the open environment to specific applications where reduction, reuse, or recycling is not feasible and where complete biodegradation is proven under real open-environment conditions.",
+      "url": "https://doi.org/10.2777/341469",
+      "type": "policy_review",
+      "material_families": ["PLA", "PHA", "PBAT", "TPS", "PE", "conventional"],
+      "environments_studied": ["soil", "freshwater", "marine"],
+      "limitations": "Policy-level scientific opinion; does not replace product-specific laboratory testing."
     },
     {
       "id": "unep_2015",
       "citation": "UNEP (2015). Biodegradable Plastics and Marine Litter: Misconceptions, concerns and impacts on marine environments. United Nations Environment Programme, Nairobi.",
-      "finding": "Concluded that the adoption of biodegradable plastics will not significantly reduce either the amount of litter entering the marine environment or the risk of physical and chemical impacts on marine life."
+      "finding": "Concluded that the adoption of biodegradable plastics will not significantly reduce either the amount of litter entering the marine environment or the risk of physical and chemical impacts on marine life.",
+      "url": "https://wedocs.unep.org/handle/20.500.11822/7468",
+      "type": "policy_report",
+      "material_families": ["PLA", "PHA", "PBAT", "PE", "PS", "conventional"],
+      "environments_studied": ["marine"],
+      "limitations": "Focused on marine litter policy rather than comprehensive polymer-by-polymer biodegradation data."
+    },
+    {
+      "id": "pmc_11207399",
+      "citation": "Carina, D., et al. (2024). Seaweed as Basis of Eco-Sustainable Plastic Materials: Focus on Alginate. International Journal of Molecular Sciences, 25(12), 6567.",
+      "finding": "Reviews alginate extraction from brown seaweed, film-forming properties, crosslinking methods (CaCl2 ionic gelation), mechanical and barrier properties, and biodegradability potential. Highlights that crosslinking degree and blend composition strongly affect degradation rate.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207399/",
+      "type": "review",
+      "material_families": ["alginate", "seaweed_biopolymers"],
+      "environments_studied": ["industrial_compost", "soil", "marine"],
+      "limitations": "Review of literature; limited quantitative respirometry data from standardised tests. Crosslinked vs. uncrosslinked film degradation rates vary widely."
+    },
+    {
+      "id": "pmc_11475904",
+      "citation": "Leoci, R. & De Leo, F. (2024). Seaweed as a Valuable and Sustainable Resource for Food Packaging Materials. Sustainability, 16(20), 8935.",
+      "finding": "Reviews alginate, agar, carrageenan and other seaweed-derived biopolymers for food packaging. Discusses mechanical properties, water vapour permeability, antimicrobial activity, and environmental biodegradation potential. Notes that most seaweed films are hydrophilic and require blending or crosslinking for practical water resistance.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11475904/",
+      "type": "review",
+      "material_families": ["alginate", "agar", "carrageenan", "seaweed_biopolymers"],
+      "environments_studied": ["soil", "marine"],
+      "limitations": "Review paper focused on food packaging applications; limited standardised biodegradation test data."
+    },
+    {
+      "id": "pmc_6918388",
+      "citation": "Gheorghita Puscaselu, R., et al. (2019). The Use of Chitosan, Alginate, and Pectin in the Biomedical and Food Sector — Biocompatibility, Bioadhesiveness, and Biodegradability. Polymers, 11(11), 1837.",
+      "finding": "Reviews chitosan, alginate, and pectin biopolymers for biomedical and food applications. Discusses biodegradability of each biopolymer, enzymatic degradation pathways (chitosanase, alginate lyase, pectinase), and biocompatibility. Notes that crosslinking and blending significantly affect degradation behaviour.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6918388/",
+      "type": "review",
+      "material_families": ["chitosan", "alginate", "pectin", "natural_polysaccharides"],
+      "environments_studied": ["industrial_compost", "soil"],
+      "limitations": "Focused on biomedical and food applications; limited data on environmental biodegradation testing under ISO standards."
+    },
+    {
+      "id": "pmc_11327468",
+      "citation": "Tkachova, J., et al. (2024). Materials Based on Biodegradable Polymers Chitosan/Gelatin: A Review of the State of the Art. International Journal of Molecular Sciences, 25(16), 8945.",
+      "finding": "Reviews chitosan and gelatin-based biodegradable materials including films, blends, and composites. Discusses enzymatic degradation pathways (chitosanases, proteases), crosslinking methods, and mechanical properties. Notes that chitosan-gelatin blends show promising biodegradability but performance depends on crosslinking density and film thickness.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327468/",
+      "type": "review",
+      "material_families": ["chitosan", "gelatin", "protein_biopolymers"],
+      "environments_studied": ["soil", "industrial_compost"],
+      "limitations": "Review paper; limited quantitative standardised biodegradation data for chitosan-gelatin composite films."
+    },
+    {
+      "id": "pmc_10599323",
+      "citation": "Ahmad, A., et al. (2023). Accelerating the Biodegradation of Poly(lactic acid) through the Inclusion of Plant Fibers. Polymers, 15(20), 4111.",
+      "finding": "Reviews PLA biodegradation mechanisms and demonstrates that inclusion of natural plant fibers can accelerate PLA degradation by improving moisture absorption and microbial access. Emphasises that environmental conditions (especially temperature > Tg ~58 °C) remain the primary driver of PLA biodegradation.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10599323/",
+      "type": "review",
+      "material_families": ["PLA", "natural_fibers", "PLA_composites"],
+      "environments_studied": ["industrial_compost", "soil"],
+      "limitations": "Focused on PLA-fiber composites; temperature dependence of PLA hydrolysis remains the fundamental constraint."
     }
   ]
 }
